@@ -4,8 +4,8 @@ plugins {
     id("java-library")
 }
 
-group = "com.lagradost"
-version = "1.0.2"
+group = "com.mehdigm"
+version = "1.1.0"
 
 publishing {
     repositories {
@@ -13,15 +13,15 @@ publishing {
     }
     publications {
         create<MavenPublication>("jitpack") {
-            groupId = "com.github.recloudstream"
+            groupId = "com.github.mehdigm4life"
             artifactId = "animedb"
-            version = "1.0.2"
+            version = "1.1.0"
             from(components["java"])
         }
         create<MavenPublication>("maven") {
-            groupId = "com.lagradost"
+            groupId = "com.mehdigm"
             artifactId = "animedb"
-            version = "1.0.2"
+            version = "1.1.0"
             from(components["java"])
         }
     }
